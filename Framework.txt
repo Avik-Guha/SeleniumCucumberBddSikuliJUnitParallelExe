@@ -1,0 +1,17 @@
+This is a Selenium Framework with Cucumber BDD, Java, Sikuli 
+
+Use below Maven command to run test:-
+
+To run in Chrome browser & QA environment:
+mvn verify -Dbrowser=chrome -Denv=qa -Dcucumber.options="--tags <tag_name>"
+mvn verify -Dbrowser=chrome -Denv=qa -Dcucumber.options="--tags @LaunchApplication"
+
+To run in Chrome browser (Headless mode) & QA environment:
+mvn verify -Dbrowser=chromeheadless -Denv=qa -Dcucumber.options="--tags <tag_name>"
+
+To run in Firefox browser & Dev environment:
+mvn verify -Dbrowser=firefox -Denv=dev -Dcucumber.options="--tags <tag_name>"
+
+
+To run specific Test Runner file from multiple files:
+mvn verify -Dtest=TestRunner
